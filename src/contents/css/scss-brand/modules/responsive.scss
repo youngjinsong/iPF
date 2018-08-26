@@ -1,16 +1,31 @@
 /*
   고해상도 처리
 */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 2101px) {
   #wrap {
-    .container {
-      max-width: 1180px;
-    }
-
     .parallax-content {
       .parallax {
-        background-size: 92%;
+        background-position: 55% 38%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1901px) {
+  #wrap {
+    .parallax-content {
+      .parallax {
         background-position: 58% 38%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  #wrap {
+    .parallax-content {
+      .parallax {
+        background-position: 64% 38%;
       }
     }
   }
@@ -27,37 +42,20 @@
   }
 }
 
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1400px) {
   #wrap {
-    .parallax-content {
-      .parallax {
-        background-position: 64% 38%;
-      }
+    .container {
+      max-width: 1180px;
     }
-  }
-}
 
-@media screen and (min-width: 1901px) {
-  #wrap {
     .parallax-content {
       .parallax {
+        background-size: 92%;
         background-position: 58% 38%;
       }
     }
   }
 }
-
-
-@media screen and (min-width: 2101px) {
-  #wrap {
-    .parallax-content {
-      .parallax {
-        background-position: 55% 38%;
-      }
-    }
-  }
-}
-
 
 @media screen and (max-width: 768px) {
   html {
@@ -91,9 +89,6 @@
     #spindlebooks {
       h3 {
         font-size: 2.5rem;
-      }
-      .icon-box img {
-        max-width: 32px;
       }
     }
 
@@ -285,18 +280,7 @@
           margin-right: 0;
         }
       }
-      ul {
-        border: 1px solid #eee;
-      }
-      li {
-        border: none;
-        border-bottom: 1px solid #eee;
-      }
-      .icon-box {
-        padding-bottom: 3%;
-        border: none;
-      }
-      .platform {
+      .card {
         margin: 0;
         width: calc(100%/2);
 
@@ -309,9 +293,7 @@
         }
       }
 
-      .authoring,
-      .backend,
-      .cloud {
+      .list-3 {
         float: none;
         width: 100%;
       }

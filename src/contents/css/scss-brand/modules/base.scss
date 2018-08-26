@@ -256,12 +256,8 @@
     }
     .card {
       float: left;
-      display: inline-block;
-      margin-right: 1%;
-      width: 32.65%;
-
+      margin: 0 1% 1% 0;
       border: 1px solid #eee;
-      text-align: center;
       background: #fff;
 
       &:nth-child(5) {
@@ -271,57 +267,17 @@
       &:last-child {
         margin-right: 0;
       }
+
+      img {
+        width: 100%;
+      }
     }
 
     .list-5 {
-      margin-bottom: 1%;
-      width: 19.2%;
+      width: calc(100%/5 - 1%);
     }
     .list-3 {
-      margin-bottom: 1%;
-      max-height: 220px;
-    }
-
-    .content {
-      width: 100%;
-    }
-
-    .tool {
-      margin: 1.5% 0 6%;
-      width: 47%;
-      vertical-align: bottom;
-      box-shadow: 0 0 2px rgba(0,0,0,0.3);
-    }
-
-    .icon-box {
-      margin: 0 auto;
-      padding-bottom: 6%;
-      width: 90%;
-
-      li {
-        width: calc(100%/5);
-      }
-      &.element3 li {
-        width: calc(100%/3);
-      }
-
-      li {
-        padding: 6% 0 0;
-        margin-right: 0;
-        height: auto;
-        border: none;
-        text-align: center;
-        font-size: 0.8rem;
-        line-height: 1;
-      }
-
-      img {
-        max-width: 45px;
-      }
-      .description {
-        display: block;
-        margin: 7px auto;
-      }
+      width: calc(100%/3 - 1%);
     }
   }
 

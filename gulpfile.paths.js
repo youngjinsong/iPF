@@ -16,7 +16,10 @@ module.exports = function() {
       result: contentsDir + '/css'
     },
     img: contentsDir + '/img/*',
-    html: srcDir + '/**/*.html'
+    html: [
+      srcDir + '/*.html',
+      srcDir + '/views/*.html'
+    ]
   };
 
   const build = {
