@@ -1,31 +1,13 @@
-/*
-  고해상도 처리
-*/
-@media screen and (min-width: 2101px) {
+@media screen and (min-width: 1400px) {
   #wrap {
-    .parallax-content {
-      .parallax {
-        background-position: 55% 38%;
-      }
+    .container {
+      max-width: 1180px;
     }
-  }
-}
 
-@media screen and (min-width: 1901px) {
-  #wrap {
     .parallax-content {
       .parallax {
+        background-size: 92%;
         background-position: 58% 38%;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1601px) {
-  #wrap {
-    .parallax-content {
-      .parallax {
-        background-position: 64% 38%;
       }
     }
   }
@@ -42,16 +24,31 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1601px) {
   #wrap {
-    .container {
-      max-width: 1180px;
-    }
-
     .parallax-content {
       .parallax {
-        background-size: 92%;
+        background-position: 64% 38%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1901px) {
+  #wrap {
+    .parallax-content {
+      .parallax {
         background-position: 58% 38%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2101px) {
+  #wrap {
+    .parallax-content {
+      .parallax {
+        background-position: 55% 38%;
       }
     }
   }
@@ -76,7 +73,7 @@
         float: right;
       }
       .title {
-        font-size: 1.2rem;
+        font-size: 1.35rem;
       }
     }
 
@@ -237,10 +234,11 @@
       li {
         float: none;
         margin: 6% auto 10%;
-        width: 95%;
+        width: 100%;
 
         &:last-child {
           float: none;
+          width: 100%;
         }
       }
 

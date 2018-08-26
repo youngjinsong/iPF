@@ -58,13 +58,13 @@
 
     h1 {
       display: inline-block;
-      padding-top: 9px;
 
       #logo {
         display: inline-block;
-        width: 170px;
-        height: 36px;
-        background: url('/contents/img/logo-ipf-wh.png') no-repeat 50% 50%/90%;
+        margin-top: 15px;
+        width: 214px;
+        height: 40px;
+        background: url("/contents/img/logo-ipf-wh.svg") no-repeat 0 0/ 67%;
         transition: all 0.4s ease-out;
       }
     }
@@ -84,6 +84,7 @@
       text-shadow: none;
     }
     #logo {
+      margin-top: 22px;
       width: 115px;
       height: 24px;
       background: url('/contents/img/logo-ipf-bk.svg') no-repeat;
@@ -203,7 +204,7 @@
     background-size: 95%;
     text-align: center;
 
-    animation-name: MOVE-BG;
+    // animation-name: MOVE-BG;
     animation-duration: 100s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -231,7 +232,7 @@
       padding-bottom: 1%;
       font-weight: 600;
       font-size: 3rem;
-      line-height: 1.2;
+      line-height: 1.25;
     }
     a {
       position: relative;
@@ -433,9 +434,8 @@
       }
 
       &:hover {
-        padding-left: 40px;
+        padding-left: 20px;
         border-bottom: 1px solid $main-color;
-        color: $main-color;
         transition: all ease-in-out 200ms;
       }
     }
