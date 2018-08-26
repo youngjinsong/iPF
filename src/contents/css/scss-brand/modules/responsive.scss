@@ -177,7 +177,6 @@
       }
     }
 
-
     header {
       background: #fff;
       border-bottom: 1px solid #ddd;
@@ -185,18 +184,22 @@
 
       h1 {
         display: block;
+        margin-top: 0;
         text-align: center;
 
         #logo {
-          width: 115px;
-          height: 23px;
+          width: 100px;
+          height: 18px;
           background: url(/contents/img/logo-ipf-bk.svg) no-repeat;
+          background-size: 90px;
         }
       }
     }
     header.sticky-header {
       #logo {
-        height: 23px;
+        width: 100px;
+        height: 18px;
+        background-size: 90px;
       }
     }
 

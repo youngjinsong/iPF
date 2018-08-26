@@ -58,6 +58,7 @@
 
     h1 {
       display: inline-block;
+      margin-top: 7px;
 
       #logo {
         display: inline-block;
@@ -84,7 +85,6 @@
       text-shadow: none;
     }
     #logo {
-      margin-top: 22px;
       width: 115px;
       height: 24px;
       background: url('/contents/img/logo-ipf-bk.svg') no-repeat;
