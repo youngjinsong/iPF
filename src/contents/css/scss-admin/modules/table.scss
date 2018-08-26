@@ -1,0 +1,28 @@
+$borderValue: solid 1px #d7d7d7;
+
+.list-table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+  border: $borderValue;
+  text-align: center;
+
+  th, td {
+    padding: 5px 10px;
+    vertical-align: middle;
+    border: $borderValue;
+  }
+
+  thead {
+    border-bottom: $borderValue;
+  }
+
+  tbody {
+    tr {
+      border-bottom: $borderValue;
+    }
+    tr:nth-of-type(odd) {
+      background: #f9f9f9;
+    }
+  }
+}

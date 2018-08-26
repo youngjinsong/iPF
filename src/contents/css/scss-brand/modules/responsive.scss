@@ -1,0 +1,360 @@
+/*
+  고해상도 처리
+*/
+@media screen and (min-width: 1400px) {
+  #wrap {
+    .container {
+      max-width: 1180px;
+    }
+
+    .parallax-content {
+      .parallax {
+        background-size: 92%;
+        background-position: 58% 38%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1501px) {
+  #wrap {
+    .parallax-content {
+      .parallax {
+        background-size: auto;
+        background-position: 90% 38%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  #wrap {
+    .parallax-content {
+      .parallax {
+        background-position: 64% 38%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1901px) {
+  #wrap {
+    .parallax-content {
+      .parallax {
+        background-position: 58% 38%;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 2101px) {
+  #wrap {
+    .parallax-content {
+      .parallax {
+        background-position: 55% 38%;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  #wrap {
+    #main-banner {
+      .txt-wrap {
+        top: 49%;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    #main-content {
+      li:last-child {
+        float: right;
+      }
+      .title {
+        font-size: 1.2rem;
+      }
+    }
+
+    #about {
+      h3 {
+        font-size: 2.3rem;
+      }
+    }
+
+    #spindlebooks {
+      h3 {
+        font-size: 2.5rem;
+      }
+      .icon-box img {
+        max-width: 32px;
+      }
+    }
+
+    .parallax-content {
+      height: auto;
+
+      .parallax {
+        float: none;
+        width: 100%;
+        height: 480px;
+        background-attachment: scroll;
+        background-size: 135%;
+        background-position: -56% 28%;
+      }
+
+      article {
+        float: none;
+        padding: 0 0 9%;
+        width: 100%;
+        text-align: center;
+
+        .appicon {
+          width: 5.5%;
+          border-radius: 12px;
+          vertical-align: -8px;
+        }
+        h4 {
+          display: inline-block;
+          margin: 0 0 0.5% 1%;
+          font-size: 2.3rem;
+        }
+        .badge-wrap img {
+          height: 38px;
+        }
+      }
+    }
+
+    #prj-brc {
+      li:before {
+        content: "";
+      }
+    }
+
+    #prj-ebsrc,
+    #prj-pop,
+    #prj-brc,
+    #prj-travalloon {
+      background-attachment: scroll;
+    }
+
+    #news {
+      ul {
+        width: 100%;
+      }
+    }
+
+    #career {
+      .team {
+        width: 100%;
+      }
+
+      li {
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  #wrap {
+    .container {
+      width: 90%;
+    }
+    .container.padding-bottom {
+      padding-bottom: 80px;
+    }
+    #btn-top {
+      padding: 2.5% 4%;
+
+      &:hover {
+        background: #000;
+      }
+    }
+
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      height: 80px;
+
+      h1 {
+        display: block;
+        text-align: center;
+
+        #logo {
+          width: 115px;
+          height: 23px;
+          background: url(/contents/img/logo-ipf-bk.svg) no-repeat;
+        }
+      }
+    }
+    header.sticky-header {
+      #logo {
+        height: 23px;
+      }
+    }
+
+    nav {
+      float: none;
+      text-align: center;
+
+      ul,
+      li {
+        display: inline;
+      }
+
+      li {
+        margin: 0;
+      }
+
+      a {
+        padding: 2%;
+        text-shadow: none;
+        color: #222;
+      }
+    }
+
+    #main-banner {
+      margin-top: 80px;
+
+      h2 {
+        font-size: 2.4rem;
+        line-height: 0.9;
+      }
+    }
+    #main-content {
+      margin-bottom: 0;
+
+      li {
+        float: none;
+        margin: 6% auto 10%;
+        width: 95%;
+
+        &:last-child {
+          float: none;
+        }
+      }
+
+      .title:after {
+          visibility: hidden;
+      }
+      .subtitle {
+        margin: 0 0 1% 0;
+      }
+    }
+
+    #about {
+      padding: 15% 0;
+      background-size: 140%;
+
+      #about-device img {
+        width: 90%;
+      }
+
+      h3 {
+        margin: 4% 0 1%;
+        font-size: 2.1rem;
+        line-height: 1.2;
+      }
+    }
+
+    #spindlebooks {
+      h3 {
+        font-size: 2.1rem;
+      }
+      a {
+        margin: 3% 1% 7% 0;
+        padding: 3% 4%;
+        width: 48.5%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      ul {
+        border: 1px solid #eee;
+      }
+      li {
+        border: none;
+        border-bottom: 1px solid #eee;
+      }
+      .icon-box {
+        padding-bottom: 3%;
+        border: none;
+      }
+      .platform {
+        margin: 0;
+        width: calc(100%/2);
+
+        &:nth-child(5) {
+          width: 100%;
+
+          img {
+            width: 56%;
+          }
+        }
+      }
+
+      .authoring,
+      .backend,
+      .cloud {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    .parallax-content {
+      .parallax {
+        height: 285px;
+        background-size: 145%;
+        background-position: -38% -15%;
+      }
+
+      article {
+        padding-bottom: 12%;
+
+        .appicon {
+          display: none;
+        }
+        .badge-wrap img {
+          height: 32px;
+        }
+      }
+    }
+
+    #career {
+      a {
+        padding: 6% 0;
+      }
+    }
+
+    #contact {
+      dl {
+        padding: 30px;
+      }
+      .map {
+        float: none;
+        margin: 0 auto 6%;
+        width: 100%;
+
+        &:last-child {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

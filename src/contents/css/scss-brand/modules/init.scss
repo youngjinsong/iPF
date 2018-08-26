@@ -1,0 +1,74 @@
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+html {
+  font-size: 16px;
+  //scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Cantarell', 'Source Serif Pro', sans-serif, "Malgun Gothic";
+  line-height: 1.6;
+  color: #222;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+img {
+  border: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+iframe {
+  border: 0;
+}
+
+hr {
+  margin: 30px 0;
+}
+
+a {
+  color: #ED1E25;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+li {
+  list-style: none;
+}
+
+h2, h3, h4 {
+  font-family: 'Source Serif Pro';
+}
+h2 {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+h3 {
+  padding: 15% 0 3%;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.15;
+}

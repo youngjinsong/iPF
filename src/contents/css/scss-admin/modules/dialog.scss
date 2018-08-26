@@ -1,0 +1,155 @@
+.dialog-wrap {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.dialog-overlay {
+  width: 100%;
+  height: 100%;
+  position: inherit;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  z-index: 21;
+  opacity: 0.2;
+  filter: alpha(opacity = 20);
+}
+
+.dialog {
+  min-width: 500px;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  z-index: 22;
+  background-color: #FFF;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  border: 3px solid #999;
+  border-radius: 6px;
+  color: #474747;
+
+  .button {
+    margin: 0 2px;
+  }
+
+  form {
+    ul {
+      margin-left: 20px;
+
+      li {
+        margin: 8px 0;
+        list-style: circle;
+        font-size: 1rem;
+        vertical-align: middle;
+        clear: both;
+      }
+    }
+
+    li > label:first-child {
+      display: inline-block;
+      float: left;
+      min-width: 80px;
+      font-size: 1rem;
+      line-height: 42px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      font-size: 1rem;
+    }
+  }
+}
+
+.dialog-header {
+  margin: 0;
+  padding: 12px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  background-color: #fefefe;
+  border-radius: 3px 3px 0 0;
+}
+
+.dialog-body {
+  padding: 20px;
+  font-size: 12px;
+  p {
+    width: auto;
+    font-size: 1.1em;
+    line-height: 18px;
+  }
+}
+
+.dialog-close {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align: center;
+  text-decoration: none;
+  line-height: 16px;
+  color: #000;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  opacity: 0.2;
+  filter: alpha(opacity = 20);
+  z-index: 24;
+  &:hover {
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+  }
+}
+
+.dialog-footer {
+  padding: 12px 15px;
+  border-top: 1px solid #eee;
+  background-color: #f6f6f6;
+  text-align: right;
+  border-radius: 0 0 3px 3px;
+
+  #delete {
+    float: left;
+  }
+}
+
+/*
+  news
+ */
+#news-dialog {
+  width: 600px;
+}
+
+/*
+  recruit
+ */
+#recruit-dialog {
+  width: 600px;
+
+  li div {
+    float: left;
+    margin-top: 10px;
+
+    label {
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    input[type="radio"] {
+      margin: 4px 2px 0 0;
+      vertical-align: top;
+    }
+  }
+}

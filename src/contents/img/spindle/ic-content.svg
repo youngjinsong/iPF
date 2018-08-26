@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="60px" viewBox="0 0 50 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>spindle_ic_content</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="spindle/ic/Storage" fill-rule="nonzero">
+            <g id="Storage/AmazonS3/AmazonS3">
+                <g id="Group">
+                    <polygon id="Shape" fill="#8C3123" points="4.07352941 10.4121951 0.0588235294 12.4097561 0.0588235294 47.5097561 4.07352941 49.5073171 13.9264706 29.9560976"></polygon>
+                    <polygon id="Shape" fill="#E05243" points="25 44.4585366 4.07352941 49.5 4.07352941 10.4121951 25 15.4536585 34.8897059 30.0146341"></polygon>
+                    <polygon id="Shape" fill="#8C3123" points="25 44.4585366 45.9191176 49.5 49.5367647 30.4536585 45.9191176 10.4121951 25 15.4536585"></polygon>
+                    <polygon id="Shape" fill="#E05243" points="45.9191176 10.4121951 49.9411765 12.4097561 49.9411765 47.5097561 45.9191176 49.5073171"></polygon>
+                    <polygon id="Shape" fill="#8C3123" points="15.875 36.4243902 25 37.5878049 32.2352941 30.0146341 25 22.4487805 15.875 23.5902439"></polygon>
+                    <polygon id="Shape" fill="#5E1F18" points="34.125 17.3780488 25 19.0317073 15.875 17.3780488 25 0"></polygon>
+                    <polygon id="Shape" fill="#F2B0A9" points="34.125 42.6219512 25 40.9536585 15.875 42.6219512 25 60"></polygon>
+                    <polygon id="Shape" fill="#E05243" points="34.125 17.3780488 25 15.1317073 25 0 34.125 4.53658537"></polygon>
+                    <polygon id="Shape" fill="#8C3123" points="15.875 17.3780488 25 15.1317073 25 0 15.875 4.53658537"></polygon>
+                    <polygon id="Shape" fill="#E05243" points="25 60 34.125 55.4634146 34.125 42.6219512 25 44.8682927"></polygon>
+                    <polygon id="Shape" fill="#8C3123" points="25 60 15.875 55.4634146 15.875 42.6219512 25 44.8682927"></polygon>
+                    <polygon id="Shape" fill="#E05243" points="34.125 36.4243902 25 37.5878049 25 22.4487805 34.125 23.5902439"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

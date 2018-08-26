@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="60px" viewBox="0 0 50 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>spindle_ic_cms_cloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="spindle/ic/CloudFront" fill-rule="nonzero">
+            <g id="NetworkingContentDelivery/AmazonCloudFront/AmazonCloudFront">
+                <polygon id="Shape" fill="#FBBF93" points="17.6714286 34.515 6.51428571 49.6031707 0.671428571 34.5437805 11.3285714 33.8890244"></polygon>
+                <polygon id="Shape" fill="#FBBF93" points="32.2142857 34.515 43.4857143 49.6895122 49.2142857 34.5581707 38.6714286 33.8890244"></polygon>
+                <polygon id="Shape" fill="#6B3A19" points="17.6714286 24.4418293 6.51428571 9.3104878 0.671428571 24.4562195 11.4214286 25.1037805"></polygon>
+                <polygon id="Shape" fill="#6B3A19" points="32.2142857 24.4418293 43.4857143 9.3104878 49.3285714 24.4562195 38.6714286 25.1109756"></polygon>
+                <polygon id="Shape" fill="#9D5025" points="32.2142857 24.4418293 43.4857143 23.6 43.4857143 9.3104878 32.2142857 12.2460976"></polygon>
+                <polygon id="Shape" fill="#F58536" points="49.3285714 24.4562195 43.4857143 23.6 43.4857143 9.3104878 49.3285714 12.2532927"></polygon>
+                <polygon id="Shape" fill="#9D5025" points="32.2142857 34.515 43.4857143 35.4 43.4857143 49.6895122 32.2142857 46.7107317"></polygon>
+                <polygon id="Shape" fill="#F58536" points="49.2142857 34.5581707 43.4857143 35.4 43.4857143 49.6895122 49.2142857 46.8042683"></polygon>
+                <polygon id="Shape" fill="#F58536" points="17.6714286 24.4418293 6.51428571 23.6 6.51428571 9.3104878 17.6714286 12.2460976"></polygon>
+                <polygon id="Shape" fill="#9D5025" points="0.671428571 24.4562195 6.51428571 23.6 6.51428571 9.3104878 0.671428571 12.2532927"></polygon>
+                <polygon id="Shape" fill="#F58536" points="17.6714286 34.515 6.51428571 35.4 6.51428571 49.6895122 17.6714286 46.7107317"></polygon>
+                <polygon id="Shape" fill="#9D5025" points="0.671428571 34.5437805 6.51428571 35.4 6.51428571 49.6895122 0.671428571 46.7467073"></polygon>
+                <polygon id="Shape" fill="#FBBF93" points="36.6142857 36.400122 25 35.2417073 13.2714286 36.3857317 25 59"></polygon>
+                <polygon id="Shape" fill="#6B3A19" points="36.6142857 22.599878 25 23.7582927 13.2714286 22.6142683 25 0"></polygon>
+                <polygon id="Shape" fill="#F58536" points="36.6142857 22.599878 25 20.9018293 25 0 36.6142857 5.84963415"></polygon>
+                <polygon id="Shape" fill="#9D5025" points="13.2714286 22.6142683 25 20.9018293 25 0 13.2714286 5.90719512"></polygon>
+                <polygon id="Shape" fill="#F58536" points="36.6142857 36.400122 25 38.0981707 25 59 36.6142857 53.1503659"></polygon>
+                <polygon id="Shape" fill="#9D5025" points="13.2714286 36.3857317 25 38.0981707 25 59 13.2714286 53.0928049"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

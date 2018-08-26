@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="60px" viewBox="0 0 50 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>spindle_ic_cms_db</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="spindle/ic/db" fill-rule="nonzero">
+            <g id="Database/AmazonRDS/AmazonRDS">
+                <g id="Group">
+                    <polygon id="Shape" fill="#2E73B8" points="50 12.3744444 43.75 5.53777778 34.9375 28 43.75 50.4466667 50 43.6255556"></polygon>
+                    <polygon id="Shape" fill="#5294CF" points="32.8125 56 43.75 50.4466667 43.75 5.53777778 32.8125 0 19.828125 28"></polygon>
+                    <polygon id="Shape" fill="#2E73B8" points="17.1875 56 32.8125 56 32.8125 0 17.1875 0 7.8125 28"></polygon>
+                    <polygon id="Shape" fill="#205B99" points="6.25 50.4388889 17.1875 56 17.1875 0 6.25 5.53777778 1.4140625 28"></polygon>
+                    <polygon id="Shape" fill="#19486F" points="0 43.6255556 6.25 50.4388889 6.25 5.53777778 0 12.3744444"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

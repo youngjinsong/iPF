@@ -1,0 +1,38 @@
+<form>
+  <h3 class="dialog-header">모집 분야 등록</h3>
+  <div id="recruit-dialog" class="dialog-body">
+    <ul>
+      <li>
+        <label for="title">모집 분야</label>
+        <input type="text" name="title" id="title" placeholder="모집 분야를 입력해주세요" value="" />
+      </li>
+      <li>
+        <label for="count">모집 상세</label>
+        <input type="text" name="detail" id="detail" placeholder="한 줄 메시지를 입력해주세요" value="" />
+      </li>
+      <li>
+        <label for="count">모집 인원</label>
+        <input type="text" name="count" id="count" placeholder="모집 인원 수를 입력해주세요" value="1" />
+      </li>
+      <li>
+        <label for="link">공고 링크</label>
+        <input type="text" name="link" id="link" placeholder="공고 링크 주소를 입력해주세요" value="" />
+      </li>
+      <li>
+        <label>공개 여부</label>
+        <div>
+          <input type="radio" name="visible" id="visible" value="true" checked />
+          <label for="visible">공개</label>
+          <input type="radio" name="visible" value="false" id="unvisible" />
+          <label for="unvisible">비공개</label>
+        </div>
+      </li>
+    </ul>
+    <input type="hidden" name="lastUpdateDate" value="" />
+  </div>
+
+  <div class="dialog-footer">
+    <button type="submit" class="button large blue">저장</button>
+    <button type="button" class="button large close">닫기</button>
+  </div>
+</form>
