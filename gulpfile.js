@@ -118,6 +118,14 @@ gulp.task('build-img', function() {
 });
 
 /**
+ * 배포: 문서
+ */
+gulp.task('build-doc', function() {
+  return gulp.src(paths.build.doc)
+    .pipe(gulp.dest(paths.build.root + '/contents/doc'));
+});
+
+/**
  * 배포 환경의 소스로 index 파일을 생성한다.
  * 브랜드
  */
@@ -197,6 +205,7 @@ gulp.task('build-all', function() {
       'build-css',
       'build-img'
     ],
+    'build-doc',
     'build-brand-html',
     'build-admin-html'
   );

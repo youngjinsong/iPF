@@ -38,6 +38,7 @@ module.exports = function() {
     },
     css: contentsDir + '/css/*.css',
     img: contentsDir + '/img/**',
+    doc: contentsDir + '/doc/*',
     html: {
       brand: srcDir + '/index.html',
       admin: srcDir + '/views/**/*.html'
