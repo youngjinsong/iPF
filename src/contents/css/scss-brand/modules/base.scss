@@ -172,11 +172,16 @@
       display: inline-block;
       text-transform: lowercase;
       text-align: center;
+      font-size: 4.5rem;
 
       border-radius: 20px;
       box-shadow:
               inset 7px 7px 5px 70px rgba(131,132,222,0.18),
               0px 1px 50px 30px rgba(131,132,222,0.18);
+    }
+
+    p {
+      font-size: 1.7rem;
     }
   }
 
@@ -245,7 +250,8 @@
     }
 
     article {
-      margin: -5% auto 0;
+      margin: -5% auto 1%;
+      width: 90%;
     }
     h3 {
       margin: 3.5% 0 0;
