@@ -144,6 +144,23 @@ gulp.task('build-brand-html', function () {
 });
 
 /**
+ * 배포 환경의 소스로 html 파일을 생성한다.
+ * 브랜드 서브
+ */
+gulp.task('build-brand-sub-html', function () {
+  const target = gulp.src(paths.build.html.brandSub);
+  const sources = gulp.src([
+    paths.build.root + '/contents/css/brand.css'
+  ], { read: false });
+
+  return target.pipe(inject(sources, {
+      ignorePath: "/build/",
+      addRootSlash: false
+    })
+  ).pipe(gulp.dest(paths.build.root + '/views'));
+});
+
+/**
  * 배포 환경의 소스로 index 파일을 생성한다.
  * 어드민
  */
@@ -158,7 +175,7 @@ gulp.task('build-admin-html', function () {
       ignorePath: "/build/",
       addRootSlash: true
     })
-  ).pipe(gulp.dest(paths.build.root + '/views'));
+  ).pipe(gulp.dest(paths.build.root + '/views/admin'));
 });
 
 /**
@@ -203,10 +220,11 @@ gulp.task('build-all', function() {
       'build-brand-js',
       'build-admin-js',
       'build-css',
-      'build-img'
+      'build-img',
     ],
-    'build-doc',
+
     'build-brand-html',
+    'build-brand-sub-html',
     'build-admin-html'
   );
 });

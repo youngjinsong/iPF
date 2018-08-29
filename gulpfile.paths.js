@@ -41,7 +41,8 @@ module.exports = function() {
     doc: contentsDir + '/doc/*',
     html: {
       brand: srcDir + '/index.html',
-      admin: srcDir + '/views/**/*.html'
+      brandSub: srcDir + '/views/*.html',
+      admin: srcDir + '/views/admin/**/*.html'
     }
   };
 
