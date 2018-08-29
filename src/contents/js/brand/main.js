@@ -84,6 +84,10 @@ $(function() {
     }, 500);
   }
 
+  $('#brc-ios-download').on('click', function() {
+    alert('해당 앱은 중국 App Store에서만 지원합니다.');
+  });
+
   /**
    * 이벤트를 텀을 두고 발동하도록 디바운싱 합니다.
    * @param fn
