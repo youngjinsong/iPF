@@ -96,7 +96,8 @@
         margin-top: 15px;
         width: 214px;
         height: 40px;
-        background: url("/contents/img/logo-ipf-wh.svg") no-repeat 0 0/ 67%;
+        background: url("/contents/img/logo-ipf-bk.svg") no-repeat 0 0/ 58%;
+
         transition: all 0.4s ease-out;
       }
     }
@@ -117,8 +118,8 @@
     }
     #logo {
       width: 115px;
-      height: 24px;
-      background: url('/contents/img/logo-ipf-bk.svg') no-repeat;
+      height: 20px;
+      background-size: 85%;
     }
   }
 
@@ -135,7 +136,7 @@
       padding: 20px 0;
       text-transform: uppercase;
       color: #fff;
-      text-shadow: 0 1px 13px #282828;
+      text-shadow: 0 1px 13px #666;
 
       &:hover {
         color: $main-color;
@@ -150,10 +151,6 @@
   // Main Banner
   #main-banner {
     position: relative;
-    // background-image: url(/contents/img/main-banner01.png);
-    // background-image: url(/contents/img/main-banner02.png);
-    // background-image: url(/contents/img/main-banner03.png);
-    // background-image: url(/contents/img/main-banner06.png);
 
     img {
       width: 100%;
@@ -161,23 +158,23 @@
 
     .txt-wrap {
       position: absolute;
-      top: 45%;
+      top: 36%;
       width: 100%;
       text-align: center;
       text-shadow: 0 2px 3px #666;
       color: #fff;
+
     }
 
     h2 {
       display: inline-block;
-      text-transform: lowercase;
+      // text-transform: lowercase;
       text-align: center;
-      font-size: 4.5rem;
+      font-size: 4.2rem;
 
       border-radius: 20px;
       box-shadow:
-              inset 7px 7px 5px 70px rgba(131,132,222,0.18),
-              0px 1px 50px 30px rgba(131,132,222,0.18);
+              inset 7px 7px 5px 70px rgba(95, 95, 123, 0.18), 0px 1px 50px 30px rgba(95, 95, 123, 0.18);
     }
 
     p {
@@ -208,6 +205,7 @@
     }
 
     .title {
+      position: relative;
       font-family: 'Source Serif Pro';
       font-size: 1.4rem;
       font-weight: 600;
@@ -216,8 +214,9 @@
         display: block;
         content: "";
         position: absolute;
-        margin-left: 1px;
-        width: 30px;
+        bottom: -5px;
+        left: 2px;
+        width: 28px;
         height: 3px;
         background: $main-color;
       }
