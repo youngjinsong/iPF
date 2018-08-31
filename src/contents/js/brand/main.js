@@ -24,10 +24,15 @@ $(function() {
     $gnbButtons.each(function() {
       var href = $(this).attr('href');
       var top = $(href).offset().top;
+
+      // 모바일 사이즈 일때 헤더 너비 제외 후 포지션 저장.
+      if ($window.width() <= 480) {
+        top -= $header.height();
+      }
       sectionPosition.push(top);
     });
 
-    console.log('setSectionPosition', sectionPosition)
+    console.log('setSectionPosition', sectionPosition);
   }
 
   /**
@@ -102,7 +107,6 @@ $(function() {
     return function() {
       var context = this;	  // container
       var args = arguments; // event
-      console.log(context, arguments);
 
       // 만약 이벤트가 호출되면 타이머를 초기화 하고 다시 시작한다.
       clearTimeout(timer);
@@ -113,15 +117,25 @@ $(function() {
   }
 
   /**
+   * Disable Logger for production version
+   */
+  function removeConsole() {
+    if (!location.host.match(/dev|localhost/) && !location.hash.match(/#showlog/)) {
+      console.log = console.info = console.warn = console.error = function() {};
+    }
+  }
+
+  /**
    * 초기 바인딩
    */
   function init() {
+    removeConsole();
     newsUI.init();
     careerUI.init();
     mapUI.init();
-    setSectionPosition();
 
     $window
+      .on('load', setSectionPosition)
       .on('scroll', onScroll)
       .on('resize', debounce(setSectionPosition, 300));
 
@@ -131,6 +145,7 @@ $(function() {
     });
 
     $gnbButtons.on('click', function() {
+      setSectionPosition();
       var $this = $(this);
       var index = $gnbButtons.index($this);
       var top = sectionPosition[index];
