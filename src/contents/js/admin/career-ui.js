@@ -25,7 +25,7 @@ function CareerUI(api) {
           listDom.push('<tr><td colspan="5">목록이 없습니다.</td></tr>');
         } else {
           $.each(data, function(key, val) {
-            var jsonData = JSON.stringify(val);
+            var jsonData = $.replaceQuoteToEntity(JSON.stringify(val));
             var visibleState = (val.visible === 'true') ? '공개' : '비공개';
 
             listDom.push([

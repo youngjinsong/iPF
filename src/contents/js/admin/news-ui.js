@@ -25,7 +25,7 @@ function NewsUI(api) {
           listDom.push('<tr><td colspan="5">목록이 없습니다.</td></tr>');
         } else {
           $.each(data, function(key, val) {
-            var jsonData = JSON.stringify(val);
+            var jsonData = $.replaceQuoteToEntity(JSON.stringify(val));
 
             listDom.push([
               "<tr>",

@@ -19,6 +19,16 @@ $.fn.serializeObject = function() {
 };
 
 /**
+ * 문자속 ', "를 Entity 문자로 치환한다.
+ * @param string
+ * @returns {string}
+ */
+$.replaceQuoteToEntity = function(string) {
+  console.log('replaceQuoteToEntity', arguments);
+  return string.replace(/'/g, '&apos;').replace(/"/, '&quot;');
+};
+
+/**
  * Object.size
  * @param {Object} obj
  */
