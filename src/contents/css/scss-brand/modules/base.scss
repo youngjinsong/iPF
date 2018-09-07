@@ -1,21 +1,12 @@
 /*!------------------------------------------------------------ *
  * iPortfolio.css
  * First Updated: 2018.08.01
- * Last Updated: 2018.08.29
+ * Last Updated: 2018.09.07
  * Author: youngjin song
  * ------------------------------------------------------------ */
 
 .align-center {
   text-align: center;
-}
-
-@keyframes MOVE-BG {
-  from {
-    background-position: 1838px bottom;
-  }
-  to {
-    background-position: 0 bottom;
-  }
 }
 
 #old-browser-wrap {
@@ -168,7 +159,6 @@
 
     h2 {
       display: inline-block;
-      // text-transform: lowercase;
       text-align: center;
       font-size: 4.2rem;
 
@@ -234,15 +224,9 @@
 
   #about {
     padding: 10.5% 0 12%;
-    // background: url(/contents/img/about-pt.png) repeat-x bottom, radial-gradient(circle at 51% 55%, #f9d692, #efc269);
     background: url(/contents/img/about-pt.png) repeat-x bottom, radial-gradient(circle at 51% 55%, #f9d692, #efc269);
     background-size: 95%;
     text-align: center;
-
-    // animation-name: MOVE-BG;
-    animation-duration: 100s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 
     #about-device img {
       width: 65%;

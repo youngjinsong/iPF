@@ -15,6 +15,16 @@ $(function() {
     , mapUI = new MapUI()
     , sectionPosition = [];
 
+    function detectMobile() {
+      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
+      if(!isMobile) {
+        $('$body').removeClass('mobileDevice');
+      } else {
+        $('body').addClass('mobileDevice');
+      }
+    }
+
   /**
    * 메뉴에 해당하는 섹션의 좌표를 저장 합니다.
    */
@@ -135,6 +145,7 @@ $(function() {
     mapUI.init();
 
     $window
+      .on('load', detectMobile)
       .on('load', setSectionPosition)
       .on('scroll', onScroll)
       .on('resize', debounce(setSectionPosition, 300));
