@@ -114,6 +114,21 @@
   }
 }
 
+/* mobile 가로모드 처리 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mobileDevice {
+    #wrap {
+      .parallax-content {
+        .parallax {
+          background-attachment: scroll;
+          background-size: 230%;
+          background-position: 5% 28%;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   html {
     font-size: 14px;
@@ -215,7 +230,6 @@
         width: 100%;
       }
     }
-
   }
 }
 
