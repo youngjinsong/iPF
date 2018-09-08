@@ -114,22 +114,8 @@
   }
 }
 
-/* mobile 가로모드 처리 */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .mobileDevice {
-    #wrap {
-      .parallax-content {
-        .parallax {
-          background-attachment: scroll;
-          background-size: 230%;
-          background-position: 5% 28%;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
+/* 모바일 (480px 이상) 처리 */
+@mixin mobile-style-large {
   html {
     font-size: 14px;
   }
@@ -231,6 +217,17 @@
       }
     }
   }
+}
+
+/* mobile 가로모드 처리 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mobileDevice {
+    @include mobile-style-large;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @include mobile-style-large;
 }
 
 @media screen and (max-width: 480px) {
