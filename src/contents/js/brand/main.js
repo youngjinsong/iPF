@@ -18,10 +18,10 @@ $(function() {
     function detectMobile() {
       var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
 
-      if(!isMobile) {
-        $('$body').removeClass('mobileDevice');
+      if(isMobile) {
+        $('body').addClass('mobile');
       } else {
-        $('body').addClass('mobileDevice');
+        $('body').addClass('pc');
       }
     }
 
