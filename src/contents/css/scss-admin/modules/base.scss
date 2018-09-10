@@ -1,3 +1,5 @@
+$main-color: #1691C5;
+
 .align-left {
   text-align: left;
 }
@@ -41,8 +43,7 @@ input[type="checkbox"] {
   border-bottom: solid 1px #000;
 
   h1 {
-    float: left;
-    margin-right: 40px;
+    font-weight: normal;
     font-size: 1.5rem;
   }
 
@@ -60,15 +61,18 @@ input[type="checkbox"] {
 
     a {
       display: inline-block;
-      min-width: 120px;
-      line-height: 40px;
+      margin: 20px 15px 0 0;
+      padding: 8px 35px 6px;
+      border-radius: 2px 2px 0 0;
+      background: #eee;
       font-size: 1.1rem;
       text-align: center;
-      color: #000;
+      color: #222;
 
       &.active {
+        background: $main-color;
         font-weight: bold;
-        color: #1691C5;
+        color: #fff;
       }
     }
   }
@@ -92,14 +96,14 @@ input[type="checkbox"] {
 }
 
 footer {
-  padding: 20px 0;
+  padding: 15px 0;
   border-top: solid 1px rgba(0,0,0,0.1);
   text-align: center;
+  font-size: 12px;
 }
 
 #content {
   margin-bottom: 80px;
-  padding: 0 40px;
   min-height: 450px;
 
   header {
