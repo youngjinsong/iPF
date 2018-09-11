@@ -60,15 +60,14 @@
   }
 }
 
-@media only (min-device-width: 768px)
-and (orientation: landscape) {
+@media only (min-device-width: 768px) and (orientation: landscape) {
   .mobile {
     #wrap {
       .parallax-content {
         height: 720px;
 
         .parallax {
-          background: no-repeat 0 60px scroll;
+          background: no-repeat 0 70px scroll;
           background-size: 220%;
         }
       }
@@ -120,6 +119,10 @@ and (orientation: landscape) {
       h3 {
         font-size: 2.5rem;
       }
+
+      a {
+        line-height: 3.3rem;
+      }
     }
 
     .parallax-content {
@@ -156,6 +159,7 @@ and (orientation: landscape) {
       }
     }
 
+    #prj-pop,
     #prj-brc {
       li:before {
         content: "";
@@ -211,27 +215,20 @@ and (orientation: landscape) {
 
     header {
       background: #fff;
-      border-bottom: 1px solid #ddd;
-      height: 80px;
 
       h1 {
         display: block;
-        margin-top: 0;
+        margin: 0;
         text-align: center;
 
         #logo {
-          width: 100px;
-          height: 18px;
-          background: url(/contents/img/logo-ipf-bk.svg) no-repeat;
-          background-size: 90px;
+          width: 90px;
         }
       }
     }
     header.sticky-header {
       #logo {
-        width: 100px;
-        height: 18px;
-        background-size: 90px;
+        width: 90px;
       }
     }
 
@@ -249,7 +246,8 @@ and (orientation: landscape) {
       }
 
       a {
-        padding: 2%;
+        margin: 0 2%;
+        padding: 0.5% 0 2%;
         text-shadow: none;
         color: #222;
       }
@@ -314,9 +312,12 @@ and (orientation: landscape) {
       h3 {
         font-size: 2.1rem;
       }
+      h4 {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+      }
       a {
         margin: 3% 1% 7% 0;
-        padding: 3% 4%;
         width: 48.5%;
 
         &:last-child {
@@ -364,6 +365,10 @@ and (orientation: landscape) {
     #career {
       a {
         padding: 6% 0;
+
+        .ic-share {
+          vertical-align: -3px;
+        }
       }
     }
 

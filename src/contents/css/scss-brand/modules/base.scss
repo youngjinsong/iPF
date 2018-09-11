@@ -9,7 +9,7 @@
 }
 
 #old-browser-wrap {
-  margin: 23% auto 0;
+  margin: 15% auto 0;
   text-align: center;
 
   h2 {
@@ -83,11 +83,8 @@
 
       #logo {
         display: inline-block;
-        margin-top: 15px;
-        width: 214px;
-        height: 40px;
-        background: url("/contents/img/logo-ipf-bk.svg") no-repeat 0 0/ 58%;
-
+        margin-top: 10px;
+        width: 120px;
         transition: all 0.4s ease-out;
       }
     }
@@ -107,9 +104,7 @@
       text-shadow: none;
     }
     #logo {
-      width: 115px;
-      height: 20px;
-      background-size: 85%;
+      width: 100px;
     }
   }
 
@@ -250,25 +245,31 @@
     text-align: center;
 
     h3 {
-      padding-bottom: 1%;
+      margin-left: 2.5%;
+      padding-bottom: 0.5%;
       font-weight: 600;
       font-size: 3rem;
       line-height: 1.25;
     }
-    i {
-      display: block;
-      font-size: 2.5rem;
+    h4 {
+      margin-bottom: 1%;
+      font-style: italic;
+      font-family: Cantarell;
+      font-weight: normal;
+      font-size: 1.4rem;
     }
+
     a {
       position: relative;
       display: inline-block;
       margin: 3% 0.5% 5%;
-      padding: 1.3% 1.8%;
+      width: 210px;
+      line-height: 3.6rem;
       border-radius: 2px;
       border: 1px solid $main-color;
       background: #fff;
       color: $main-color;
-      transition: all 0.5s;
+      transition: all 0.3s;
 
       &:hover {
         background: $main-color;
@@ -306,8 +307,6 @@
       width: calc(100%/3 - 1%);
     }
   }
-
-
 
   // 패펄렉스 콘텐츠
   .parallax-content {
@@ -404,14 +403,8 @@
     }
   }
 
+  #prj-pop,
   #prj-brc {
-    background: #FAFAFA url(/contents/img/parallax/prj-brc-pt.png) no-repeat center center fixed;
-    background-size: cover;
-
-    .parallax {
-      background-image: url(/contents/img/parallax/prj-brc.png);
-    }
-
     li {
       position: relative;
       padding-left: 15px;
@@ -422,6 +415,15 @@
         left: 0;
         content: "・";
       }
+    }
+  }
+
+  #prj-brc {
+    background: #FAFAFA url(/contents/img/parallax/prj-brc-pt.png) no-repeat center center fixed;
+    background-size: cover;
+
+    .parallax {
+      background-image: url(/contents/img/parallax/prj-brc.png);
     }
   }
 
@@ -513,7 +515,8 @@
       color: $main-color;
 
       .ic-share {
-        margin-left: 5px;
+        margin-left: 3px;
+        vertical-align: -1px;
         width: 15px;
       }
 
