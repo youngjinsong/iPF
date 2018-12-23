@@ -537,28 +537,12 @@
   #contact {
     background: #fff;
 
-    .container:after {
-      display: block;
-      content: "";
-      clear: both;
-    }
-
     .map {
-      float: left;
-      margin-right: 2%;
-      width: 49%;
+      width: 100%;
       border: 1px solid #eee;
 
       #headoffice {
-        height: 400px;
-      }
-
-      #suboffice {
-        height: 400px;
-      }
-
-      &:last-child {
-        margin-right: 0;
+        height: 500px;
       }
     }
 
@@ -572,11 +556,13 @@
         font-weight: 600;
         font-weight: bold;
       }
-      dd.tel {
-        margin-top: 5px;
-      }
       a {
         color: #222;
+
+        &:hover {
+          color: $main-color;
+          border-bottom: 1px solid $main-color;
+        }
       }
     }
   }

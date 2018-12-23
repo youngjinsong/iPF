@@ -39,28 +39,17 @@ function MapUI() {
      */
     init: function() {
       var headOfficePos = {
-        lat: 37.568532,
-        lng: 126.981632
-      };
-      var subOfficePos = {
-        lat: 37.497072,
-        lng: 127.0285777
+        lat: 37.567102,
+        lng: 126.9811195
       };
 
       that.setMap({
         el: document.getElementById('headoffice'),
         position: headOfficePos,
-        title: "아이포트폴리오 본사"
-      });
-
-      that.setMap({
-        el: document.getElementById('suboffice'),
-        position: subOfficePos,
-        title: "아이포트폴리오 연구소"
+        title: "아이포트폴리오"
       });
     }
   };
 
   $.extend(this, mapUI);
 }
-
