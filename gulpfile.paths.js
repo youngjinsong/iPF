@@ -1,7 +1,7 @@
 module.exports = function() {
 
   // Target path
-  const srcDir = './src';          // source directory path
+  const srcDir = './src';
   const contentsDir = srcDir + '/contents';
   const watch = {
     js: [

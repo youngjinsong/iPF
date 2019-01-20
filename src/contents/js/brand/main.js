@@ -5,25 +5,30 @@
  *
  */
 $(function() {
-  var $window = $(window)
-    , $header = $('header')
-    , $btnTop = $('#btn-top')
-    , $gnbButtons = $('nav a')
-    , api = new API()
-    , newsUI = new NewsUI(api)
-    , careerUI = new CareerUI(api)
-    , mapUI = new MapUI()
-    , sectionPosition = [];
+  var $window = $(window);
+  var $body = $('body');
+  var $header = $('header');
+  var $btnTop = $('#btn-top');
+  var $gnbButtons = $('nav a');
+  var api = new API();
+  var newsUI = new NewsUI(api);
+  var careerUI = new CareerUI(api);
+  var mapUI = new MapUI();
+  var sliderUI = new SliderUI();
+  var sectionPosition = [];
 
-    function detectMobile() {
-      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+  /**
+   * 모바일 디바이스 체크
+   */
+  function detectMobile() {
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
 
-      if(isMobile) {
-        $('body').addClass('mobile');
-      } else {
-        $('body').addClass('pc');
-      }
+    if(isMobile) {
+      $body.addClass('mobile');
+    } else {
+      $body.addClass('pc');
     }
+  }
 
   /**
    * 메뉴에 해당하는 섹션의 좌표를 저장 합니다.
@@ -142,6 +147,7 @@ $(function() {
     removeConsole();
     newsUI.init();
     careerUI.init();
+    sliderUI.init();
     mapUI.init();
 
     $window
