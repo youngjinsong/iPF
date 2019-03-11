@@ -436,6 +436,34 @@
     }
   }
 
+  #ed-start {
+    padding: 20px 0;
+    background: #C5DF43;
+    text-align: center;
+
+    img {
+      display: inline-block;
+      margin-right: 40px;
+      vertical-align: bottom;
+      width: 130px;
+    }
+
+    .txt-wrap {
+      display: inline-block;
+      padding-bottom: 30px;
+
+      h4 {
+        font-size: 40px;
+      }
+      span {
+        display: block;
+        font-size: 16px;
+        text-align: left;
+      }
+    }
+  }
+
+
   #news {
     background: #fff;
 

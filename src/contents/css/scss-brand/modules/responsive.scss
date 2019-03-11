@@ -173,6 +173,26 @@
       background-attachment: scroll;
     }
 
+    #ed-start {
+      img {
+        margin-right: 0;
+        width: 17%;
+      }
+
+      .txt-wrap {
+        display: block;
+        padding-bottom: 0;
+
+        h4 {
+          padding-top: 10px;
+          font-size: 2rem;
+        }
+        span {
+          text-align: center;
+        }
+      }
+    }
+
     #news {
       ul {
         width: 100%;
@@ -358,6 +378,17 @@
         }
         .badge-wrap img {
           height: 32px;
+        }
+      }
+    }
+
+    #ed-start {
+      img {
+        width: 30%;
+      }
+      .txt-wrap {
+        h4 {
+          font-size: 1.6rem;
         }
       }
     }
