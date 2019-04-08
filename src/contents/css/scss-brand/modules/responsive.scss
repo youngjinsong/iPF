@@ -179,17 +179,11 @@
         width: 17%;
       }
 
-      .txt-wrap {
+      h4 {
         display: block;
         padding-bottom: 0;
-
-        h4 {
-          padding-top: 10px;
-          font-size: 2rem;
-        }
-        span {
-          text-align: center;
-        }
+        padding-top: 10px;
+        font-size: 2rem;
       }
     }
 
@@ -386,10 +380,9 @@
       img {
         width: 30%;
       }
-      .txt-wrap {
-        h4 {
-          font-size: 1.6rem;
-        }
+
+      h4 {
+        font-size: 1.6rem;
       }
     }
 
