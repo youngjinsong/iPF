@@ -61,10 +61,11 @@
 }
 
 @media only (min-device-width: 768px) and (orientation: landscape) {
+  // @media only (min-device-width: 1024px) and (orientation: portrait)
   .mobile {
     #wrap {
       .parallax-content {
-        height: 720px;
+        height: 830px;
 
         .parallax {
           background: no-repeat 0 70px scroll;
@@ -82,6 +83,27 @@
   }
 }
 
+@media only (min-device-width: 1024px) and (orientation: portrait) {
+  .mobile {
+    #wrap {
+      .parallax-content {
+        height: 700px;
+
+        .parallax {
+          background: no-repeat 0 70px scroll;
+          background-size: 220%;
+        }
+      }
+
+      #prj-ebsrc,
+      #prj-pop,
+      #prj-brc,
+      #prj-travalloon {
+        background-attachment: scroll;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 768px) {
   html {
