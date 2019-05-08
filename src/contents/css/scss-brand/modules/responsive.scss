@@ -108,10 +108,11 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 834px) {
   html {
     font-size: 14px;
   }
+
   #wrap {
     #main-banner {
       .txt-wrap {
@@ -159,7 +160,7 @@
         height: 480px;
         background-attachment: scroll;
         background-size: 135%;
-        background-position: -56% 28%;
+        background-position: -56% 33%;
       }
 
       article {
@@ -169,13 +170,13 @@
         text-align: center;
 
         .appicon {
-          width: 5.5%;
+          width: 5%;
           border-radius: 9px;
           vertical-align: -8px;
         }
         h4 {
           display: inline-block;
-          margin: 0 0 0.5% 1%;
+          margin: 2% 0 0.5% 1%;
           font-size: 2.3rem;
         }
         .badge-wrap img {
