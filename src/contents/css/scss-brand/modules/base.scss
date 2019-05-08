@@ -318,7 +318,7 @@
 
     .parallax {
       float: left;
-      width: 45%;
+      width: 50%;
       background: no-repeat left center fixed;
       background-size: contain;
     }
@@ -326,12 +326,12 @@
     article {
       float: left;
       padding-top: 18%;
-      width: 50%;
+      width: 45%;
       color: #fff;
 
       .appicon {
         width: 10%;
-        border-radius: 18px;
+        border-radius: 30%;
         background: #fff;
         box-shadow: 0 0 13px rgba(0,0,0,0.1);
       }

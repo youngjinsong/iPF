@@ -61,15 +61,18 @@
 }
 
 @media only (min-device-width: 768px) and (orientation: landscape) {
-  // @media only (min-device-width: 1024px) and (orientation: portrait)
   .mobile {
     #wrap {
       .parallax-content {
-        height: 830px;
+        height: 860px;
 
         .parallax {
           background: no-repeat 0 70px scroll;
           background-size: 220%;
+        }
+
+        article {
+          padding-top: 20%;
         }
       }
 
@@ -87,7 +90,7 @@
   .mobile {
     #wrap {
       .parallax-content {
-        height: 700px;
+        height: 730px;
 
         .parallax {
           background: no-repeat 0 70px scroll;
@@ -167,7 +170,7 @@
 
         .appicon {
           width: 5.5%;
-          border-radius: 12px;
+          border-radius: 9px;
           vertical-align: -8px;
         }
         h4 {
