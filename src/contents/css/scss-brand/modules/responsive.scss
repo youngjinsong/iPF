@@ -73,6 +73,7 @@
 
         article {
           padding-top: 20%;
+          // background: red;
         }
       }
 
@@ -86,15 +87,21 @@
   }
 }
 
-@media only (min-device-width: 1024px) and (orientation: portrait) {
+@media only (min-device-width: 834px) and (orientation: portrait) {
   .mobile {
     #wrap {
       .parallax-content {
-        height: 730px;
+        height: 670px;
 
         .parallax {
+          width: 45%;
           background: no-repeat 0 70px scroll;
           background-size: 220%;
+        }
+
+        article {
+          // background: pink;
+          width: 55%;
         }
       }
 
@@ -108,7 +115,8 @@
   }
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 768px) {
+  // @media screen and (max-width: 834px) {
   html {
     font-size: 14px;
   }
