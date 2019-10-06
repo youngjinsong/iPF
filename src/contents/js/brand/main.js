@@ -108,6 +108,29 @@ $(function() {
     alert('해당 앱은 중국 App Store에서만 지원합니다.');
   });
 
+  /** 
+   *  스토어 등록 후 제거 예정 ORC (JP, TR)
+  */
+  $('#orc-jp-android-download').on('click', function() {
+    alert('Coming Soon!');
+    return false;
+  });
+
+  $('#orc-jp-ios-download').on('click', function() {
+    alert('Coming Soon!');
+    return false;
+  });
+
+  $('#orc-tr-android-download').on('click', function() {
+    alert('Coming Soon!');
+    return false;
+  });
+  
+  $('#orc-tr-ios-download').on('click', function() {
+    alert('Coming Soon!');
+    return false;
+  });
+
   /**
    * 이벤트를 텀을 두고 발동하도록 디바운싱 합니다.
    * @param fn

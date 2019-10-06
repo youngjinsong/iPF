@@ -404,7 +404,9 @@
   }
 
   #prj-pop,
-  #prj-brc {
+  #prj-brc,
+  #prj-orc-jp,
+  #prj-orc-tr {
     li {
       position: relative;
       padding-left: 15px;
@@ -424,6 +426,24 @@
 
     .parallax {
       background-image: url(/contents/img/parallax/prj-brc.png);
+    }
+  }
+
+  #prj-orc-jp {
+    background: #FAFAFA url(/contents/img/parallax/prj-orc-jp-pt.png) no-repeat center center fixed;
+    background-size: cover;
+
+    .parallax {
+      background-image: url(/contents/img/parallax/prj-orc-jp.png);
+    }
+  }
+
+  #prj-orc-tr {
+    background: #FAFAFA url(/contents/img/parallax/prj-orc-tr-pt.png) no-repeat center center fixed;
+    background-size: cover;
+
+    .parallax {
+      background-image: url(/contents/img/parallax/prj-orc-tr.png);
     }
   }
 
@@ -525,7 +545,7 @@
     a {
       display: block;
       padding: 3% 0;
-      border: 1px solid #eee;
+      border-bottom: 1px solid #eee;
       color: $main-color;
 
       .ic-share {
@@ -535,7 +555,7 @@
       }
 
       &:hover {
-        border: 1px solid $main-color;
+        border-bottom: 1px solid $main-color;
         color: $main-color;
         transition: all ease-in-out 250ms;
       }

@@ -79,6 +79,8 @@
       #prj-tapas,
       #prj-pop,
       #prj-brc,
+      #prj-orc-jp,
+      #prj-orc-tr,
       #prj-travalloon {
         background-attachment: scroll;
       }
@@ -106,6 +108,8 @@
       #prj-tapas,
       #prj-pop,
       #prj-brc,
+      #prj-orc-jp,
+      #prj-orc-tr,
       #prj-travalloon {
         background-attachment: scroll;
       }
@@ -191,7 +195,9 @@
     }
 
     #prj-pop,
-    #prj-brc {
+    #prj-brc,
+    #prj-orc-jp,
+    #prj-orc-tr {
       li:before {
         content: "";
       }
@@ -200,6 +206,8 @@
     #prj-tapas,
     #prj-pop,
     #prj-brc,
+    #prj-orc-jp,
+    #prj-orc-tr,
     #prj-travalloon {
       background-attachment: scroll;
     }
