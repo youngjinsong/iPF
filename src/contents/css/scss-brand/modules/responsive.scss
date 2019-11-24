@@ -212,20 +212,6 @@
       background-attachment: scroll;
     }
 
-    #ed-start {
-      img {
-        margin-right: 0;
-        width: 17%;
-      }
-
-      h4 {
-        display: block;
-        padding-bottom: 0;
-        padding-top: 10px;
-        font-size: 2rem;
-      }
-    }
-
     #news {
       ul {
         width: 100%;
@@ -415,16 +401,6 @@
       }
     }
 
-    #ed-start {
-      img {
-        width: 30%;
-      }
-
-      h4 {
-        font-size: 1.6rem;
-      }
-    }
-
     #career {
       a {
         padding: 6% 0;
@@ -445,6 +421,18 @@
     #contact {
       dl {
         padding: 30px;
+      }
+    }
+
+    #mark {
+      padding: 4% 0 3%;
+
+      img {
+        width: 28%;
+      }
+
+      .mark-aws {
+        margin-left: 20px;
       }
     }
   }

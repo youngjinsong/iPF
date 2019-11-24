@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_fb</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Brand-Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPF/Brandsite" transform="translate(-1280.000000, -12281.000000)" fill="#FFFFFF">
+            <g id="Group-19" transform="translate(0.000000, 11084.000000)">
+                <g id="footer" transform="translate(0.000000, 1167.000000)">
+                    <path d="M1295,60 C1286.71573,60 1280,53.2842717 1280,45 C1280,36.7157283 1286.71573,30 1295,30 C1303.28427,30 1310,36.7157283 1310,45 C1310,53.2842717 1303.28427,60 1295,60 Z M1292.88261,53.1598365 L1296.25429,53.1598365 L1296.25429,44.9990445 L1298.50377,44.9990445 L1298.80188,42.1867904 L1296.25429,42.1867904 L1296.25811,40.7792302 C1296.25811,40.045751 1296.3277,39.6527361 1297.37967,39.6527361 L1298.78595,39.6527361 L1298.78595,36.8401635 L1296.53615,36.8401635 C1293.83377,36.8401635 1292.88261,38.2044093 1292.88261,40.4986418 L1292.88261,42.1871089 L1291.19812,42.1871089 L1291.19812,44.999363 L1292.88261,44.999363 L1292.88261,53.1598365 Z" id="ic_fb"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
