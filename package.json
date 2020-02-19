@@ -1,7 +1,7 @@
 {
-  "name": "iPF",
+  "name": "ipf",
   "author": "colorbridge",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "description": "iPF Hompage",
   "license": "D",
   "devDependencies": {
@@ -17,8 +17,8 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
-    "natives": "^1.1.6",
-    "run-sequence": "^2.2.1"
+    "run-sequence": "^2.2.1",
+    "natives": "^1.1.6"
   },
   "main": "gulpfile.js",
   "scripts": {
