@@ -199,7 +199,7 @@
     #prj-orc-jp,
     #prj-orc-tr {
       li:before {
-        content: "";
+        content: '';
       }
     }
 
@@ -322,7 +322,7 @@
       }
 
       .title:after {
-          visibility: hidden;
+        visibility: hidden;
       }
       .subtitle {
         margin: 0 0 1% 0;
@@ -356,16 +356,17 @@
         font-size: 1.2rem;
       }
       a {
-        margin: 6% 1% 8%;
+        margin: 4.5% 0;
+        padding: 1.5%;
         width: 100%;
 
         &:last-child {
-          margin-right: 0;
+          margin: 0 0 6%;
         }
       }
       .card {
         margin: 0;
-        width: calc(100%/2);
+        width: calc(100% / 2);
 
         &:nth-child(5) {
           width: 100%;
