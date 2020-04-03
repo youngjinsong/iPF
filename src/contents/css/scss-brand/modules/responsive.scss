@@ -84,6 +84,10 @@
       #prj-travalloon {
         background-attachment: scroll;
       }
+
+      #bett-highlights {
+        background-attachment: scroll;
+      }
     }
   }
 }
@@ -111,6 +115,10 @@
       #prj-orc-jp,
       #prj-orc-tr,
       #prj-travalloon {
+        background-attachment: scroll;
+      }
+
+      #bett-highlights {
         background-attachment: scroll;
       }
     }
@@ -214,6 +222,20 @@
 
     #news {
       ul {
+        width: 100%;
+      }
+    }
+
+    #bett-highlights {
+      background-attachment: scroll;
+
+      .pdf-download {
+        margin-bottom: 0;
+      }
+
+      a {
+        margin: 3% 0 0;
+        padding: 3% 0;
         width: 100%;
       }
     }
@@ -348,9 +370,6 @@
     }
 
     #spindlebooks {
-      h3 {
-        font-size: 2.1rem;
-      }
       h4 {
         margin-bottom: 1rem;
         font-size: 1.2rem;
@@ -359,10 +378,6 @@
         margin: 4.5% 0;
         padding: 1.5%;
         width: 100%;
-
-        &:last-child {
-          margin: 0 0 6%;
-        }
       }
       .card {
         margin: 0;
