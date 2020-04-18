@@ -15,14 +15,16 @@ body.unsigned {
     line-height: 33px;
     font-family: sans-serif;
     font-weight: normal;
+    text-align: center;
 
     span {
       display: inline-block;
       width: 122px;
-      height: 25px;
+      height: 38px;
       font-size: 0;
       vertical-align: top;
-      background: url(../../../contents/img/logo-ipf-bk.svg) no-repeat 0 center;
+      background: url(../../../contents/img/logo-ipf-red.svg) no-repeat 0 center;
+      background-size: contain;
     }
   }
 
