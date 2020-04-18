@@ -21,7 +21,7 @@
    */
   function getPage(pageName) {
     console.log('getPage', arguments);
-    var url = "./partial/" + pageName + ".html";
+    var url = './partial/' + pageName + '.html';
     var instance = pageUIs[pageName]; // 해당 페이지 UI instance 탐색
 
     if (!instance) {
@@ -42,7 +42,7 @@
    */
   function activeMenu(name) {
     var $gnb = $('#gnb');
-    var $target = $gnb.find("[href='#"+ name + "']");
+    var $target = $gnb.find("[href='#" + name + "']");
 
     $gnb.find('.active').removeClass('active');
     $target.addClass('active');
@@ -64,7 +64,6 @@
     $(window).bind('hashchange', function() {
       hash = location.hash;
       pageName = hash.split('#')[1];
-
       getPage(pageName);
     });
   }
@@ -80,5 +79,4 @@
     setHashListener();
   }
   init();
-
 })(jQuery, document, window);
