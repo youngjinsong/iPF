@@ -26,7 +26,7 @@
   top: 20%;
   left: 50%;
   z-index: 22;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   font-size: 18px;
   border: 3px solid #999;
@@ -59,8 +59,8 @@
       font-weight: bold;
     }
 
-    input[type="text"] {
-      width: 80%;
+    input[type='text'] {
+      width: 84%;
       font-size: 1rem;
     }
   }
@@ -96,7 +96,7 @@
   right: 5px;
   font-size: 30px;
   font-weight: bold;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 16px;
@@ -129,14 +129,14 @@
   news
  */
 #news-dialog {
-  width: 600px;
+  width: 700px;
 }
 
 /*
   recruit
  */
 #recruit-dialog {
-  width: 600px;
+  width: 700px;
 
   li div {
     float: left;
@@ -147,7 +147,7 @@
       cursor: pointer;
     }
 
-    input[type="radio"] {
+    input[type='radio'] {
       margin: 4px 2px 0 0;
       vertical-align: top;
     }

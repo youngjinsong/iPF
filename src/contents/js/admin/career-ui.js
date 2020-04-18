@@ -26,12 +26,13 @@ function CareerUI(api) {
         } else {
           $.each(data, function(key, val) {
             var jsonData = $.replaceQuoteToEntity(JSON.stringify(val));
-            var visibleState = (val.visible === 'true') ? '공개' : '비공개';
+            var visibleState = val.visible === 'true' ? '공개' : '비공개';
 
+            // prettier-ignore
             listDom.push([
               "<tr>",
                 "<td>" + size + "</td>",
-                "<td class='title'>" + val.title + "<p>" + val.detail + "</p></td>",
+                "<td class='title'><button class='edit' data-obj='" + jsonData + "'>" + val.title + "</button><p>" + val.detail + "</p></td>",
                 "<td>" + visibleState + "</td>",
                 "<td><a href='" + val.link + "' class='button green' target='_blank'>" + "링크" + "</a></td>",
                 "<td><button class='edit button green' data-obj='" + jsonData + "'>수정</button></td>",
@@ -118,9 +119,9 @@ function CareerUI(api) {
         $dialog.find('[name=link]').val(link);
         $dialog.find('[name=lastUpdateDate]').val(lastUpdateDate);
         $dialog.find('form').append('<input type="hidden" name="id" value="' + id + '" />');
-        $dialog.find('.dialog-footer').prepend([
-          "<button type='button' id='delete' class='button large red'>삭제</button>"
-        ].join('\n'));
+        $dialog
+          .find('.dialog-footer')
+          .prepend(["<button type='button' id='delete' class='button large red'>삭제</button>"].join('\n'));
 
         if (visible === 'false') {
           $('#unvisible').attr('checked', true);

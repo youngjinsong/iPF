@@ -7,10 +7,20 @@ $borderValue: solid 1px #d7d7d7;
   border: $borderValue;
   text-align: center;
 
-  th, td {
+  th,
+  td {
     padding: 5px 10px;
     vertical-align: middle;
     border: $borderValue;
+
+    &.title button {
+      font-size: inherit;
+      text-align: left;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   thead {

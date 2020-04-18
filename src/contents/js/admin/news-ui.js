@@ -27,11 +27,12 @@ function NewsUI(api) {
           $.each(data, function(key, val) {
             var jsonData = $.replaceQuoteToEntity(JSON.stringify(val));
 
+            // prettier-ignore
             listDom.push([
               "<tr>",
                 "<td>" + size + "</td>",
                 "<td>" + moment(val.date).format('YYYY-MM-DD') + "</td>",
-                "<td class='title'>" + val.title + "</td>",
+                "<td class='title'><button class='edit' data-obj='" + jsonData + "'>" + val.title + "</button></td>",
                 "<td><a href='" + val.link + "' class='button green' target='_blank'>" + "링크" + "</a></td>",
                 "<td><button class='edit button green' data-obj='" + jsonData + "'>수정</button></td>",
               "</tr>"
@@ -117,9 +118,9 @@ function NewsUI(api) {
         $dialog.find('[name=link]').val(link);
         $dialog.find('[name=date]').val(date);
         $dialog.find('form').append('<input type="hidden" name="id" value="' + id + '" />');
-        $dialog.find('.dialog-footer').prepend([
-          "<button type='button' id='delete' class='button large red'>삭제</button>"
-        ].join('\n'));
+        $dialog
+          .find('.dialog-footer')
+          .prepend(["<button type='button' id='delete' class='button large red'>삭제</button>"].join('\n'));
 
         $('#delete').click(function() {
           that.deleteItem(id, function() {
@@ -128,7 +129,7 @@ function NewsUI(api) {
             $.msgbox('삭제 되었습니다.');
           });
         });
-     });
+      });
     },
 
     /**

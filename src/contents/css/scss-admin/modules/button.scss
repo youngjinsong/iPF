@@ -7,6 +7,11 @@
   border-radius: 3px;
   font-size: 0.8rem;
   text-align: center;
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 1;
+  }
 
   &.large {
     min-width: 80px;
@@ -15,7 +20,7 @@
   }
 
   &.blue {
-    background: #1691C5;
+    background: #1691c5;
   }
 
   &.green {
