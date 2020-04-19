@@ -9,9 +9,9 @@ function API() {
   console.log('Loaded API', arguments);
 
   var firebaseConfig = {
-    apiKey: "AIzaSyD7-0MvZwk2SSopDRl3AAx0b8iaTQ6pufo",
-    authDomain: "iportfolio-1532830529208.firebaseapp.com",
-    databaseURL: "https://iportfolio-1532830529208.firebaseio.com/"
+    apiKey: 'AIzaSyD7-0MvZwk2SSopDRl3AAx0b8iaTQ6pufo',
+    authDomain: 'iportfolio-1532830529208.firebaseapp.com',
+    databaseURL: 'https://iportfolio-1532830529208.firebaseio.com/'
   };
   var db;
 
@@ -21,45 +21,56 @@ function API() {
    */
   var news = {
     create: function(data, callback) {
-      var id = db.ref().child('news').push().key;
+      var id = db
+        .ref()
+        .child('news')
+        .push().key;
       var title = data.title;
       var link = data.link;
       var timestemp = new Date(data.date).getTime();
 
-      db.ref('news/' + id).set({
-        id: id,
-        title: title,
-        link: link,
-        date: timestemp
-      }, function(error) {
-        if (error) {
-          // The write failed...
-          console.error("saved error", error);
-        } else {
-          // Data saved successfully!
-          console.log("saved");
-          callback && callback();
+      db.ref('news/' + id).set(
+        {
+          id: id,
+          title: title,
+          link: link,
+          date: timestemp
+        },
+        function(error) {
+          if (error) {
+            // The write failed...
+            console.error('saved error', error);
+          } else {
+            // Data saved successfully!
+            console.log('saved');
+            callback && callback();
+          }
         }
-      });
+      );
     },
     read: function(count, callback) {
       var result = [];
 
       if (count) {
-        db.ref('news/').limitToLast(count).orderByChild('date').once('value', function(data) {
-          data.forEach(function(obj) {
-            result.unshift(obj.val());
+        db.ref('news/')
+          .limitToLast(count)
+          .orderByChild('date')
+          .once('value', function(data) {
+            data.forEach(function(obj) {
+              result.unshift(obj.val());
+            });
+            callback(result);
           });
-          callback(result);
-        });
       } else {
         // orderByChild()	지정된 하위 키 또는 중첩된 하위 경로의 값에 따라 결과를 정렬합니다.
-        db.ref('news/').orderByChild('date').once('value', function(data) {
-          data.forEach(function(obj) {
-            result.unshift(obj.val());
+        db.ref('news/')
+          .orderByChild('date')
+          .once('value', function(data) {
+            data.forEach(function(obj) {
+              result.unshift(obj.val());
+            });
+            callback(result);
           });
-          callback(result);
-        });
       }
     },
     update: function(data, callback) {
@@ -69,10 +80,10 @@ function API() {
       db.ref('news/' + id).update(data, function(error) {
         if (error) {
           // The write failed...
-          console.error("update error", error);
+          console.error('update error', error);
         } else {
           // Data saved successfully!
-          console.log("updated");
+          console.log('updated');
           callback && callback();
         }
       });
@@ -81,10 +92,10 @@ function API() {
       db.ref('news/' + id).remove(function(error) {
         if (error) {
           // The write failed...
-          console.error("delete error", error);
+          console.error('delete error', error);
         } else {
           // Data saved successfully!
-          console.log("deleted");
+          console.log('deleted');
           callback && callback();
         }
       });
@@ -97,30 +108,36 @@ function API() {
    */
   var career = {
     create: function(data, callback) {
-      var id = db.ref().child('career').push().key;
+      var id = db
+        .ref()
+        .child('career')
+        .push().key;
       var title = data.title;
       var detail = data.detail;
       var link = data.link;
       var visible = data.visible;
       var lastUpdateDate = data.lastUpdateDate;
 
-      db.ref('career/' + id).set({
-        id: id,
-        title: title,
-        detail: detail,
-        link: link,
-        visible: visible,
-        lastUpdateDate: lastUpdateDate
-      }, function(error) {
-        if (error) {
-          // The write failed...
-          console.error("saved error", error);
-        } else {
-          // Data saved successfully!
-          console.log("saved");
-          callback && callback();
+      db.ref('career/' + id).set(
+        {
+          id: id,
+          title: title,
+          detail: detail,
+          link: link,
+          visible: visible,
+          lastUpdateDate: lastUpdateDate
+        },
+        function(error) {
+          if (error) {
+            // The write failed...
+            console.error('saved error', error);
+          } else {
+            // Data saved successfully!
+            console.log('saved');
+            callback && callback();
+          }
         }
-      });
+      );
     },
     read: function(callback) {
       var result = [];
@@ -136,10 +153,10 @@ function API() {
       db.ref('career/' + id).update(data, function(error) {
         if (error) {
           // The write failed...
-          console.error("update error", error);
+          console.error('update error', error);
         } else {
           // Data saved successfully!
-          console.log("updated");
+          console.log('updated');
           callback && callback();
         }
       });
@@ -148,10 +165,10 @@ function API() {
       db.ref('career/' + id).remove(function(error) {
         if (error) {
           // The write failed...
-          console.error("delete error", error);
+          console.error('delete error', error);
         } else {
           // Data saved successfully!
-          console.log("deleted");
+          console.log('deleted');
           callback && callback();
         }
       });
@@ -183,4 +200,3 @@ function API() {
    */
   this.career = career;
 }
-

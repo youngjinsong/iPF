@@ -6,8 +6,8 @@
 function NewsUI(api) {
   var that = this;
   var newsUI = {
-    data: null,             // API 응답 객체
-    renderingCount: 5,      // 한번에 목록을 그리는 횟수
+    data: null, // API 응답 객체
+    renderingCount: 5, // 한번에 목록을 그리는 횟수
     $container: $('#news'), // 컨테이너 DOM
 
     /**
@@ -36,6 +36,7 @@ function NewsUI(api) {
         var date = moment(item.date).format('MMMM DD, YYYY');
         // var date = moment(item.date).format('YYYY-MM-DD');
 
+        // prettier-ignore
         result.push([
           '<li>',
             '<a href="' + link + '" target="_blank">',

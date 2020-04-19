@@ -33,7 +33,9 @@ $.replaceQuoteToEntity = function(string) {
  * @param {Object} obj
  */
 Object.size = function(obj) {
-  var size = 0, key;
+  var size = 0;
+  var key;
+
   for (key in obj) {
     if (obj.hasOwnProperty(key)) size++;
   }
@@ -43,7 +45,7 @@ Object.size = function(obj) {
 /**
  * dialog plugin
  */
-(function($, win, doc){
+(function($, win, doc) {
   var $dialogWrap;
   var $dialog;
 
@@ -51,7 +53,10 @@ Object.size = function(obj) {
     if (url) {
       $.get(url, function(res) {
         !$dialogWrap && $.dialog.create();
-        $dialogWrap.show().find('.dialog-content').html(res);
+        $dialogWrap
+          .show()
+          .find('.dialog-content')
+          .html(res);
         $.dialog.center();
         callback && callback();
       });
@@ -59,7 +64,10 @@ Object.size = function(obj) {
       this.click(function() {
         $.get(this.href, function(res) {
           !$dialogWrap && $.dialog.create();
-          $dialogWrap.show().find('.dialog-content').html(res);
+          $dialogWrap
+            .show()
+            .find('.dialog-content')
+            .html(res);
           $.dialog.center();
         });
         return false;
@@ -68,6 +76,7 @@ Object.size = function(obj) {
   };
 
   $.dialog.create = function() {
+    // prettier-ignore
     $dialogWrap = $([
       '<div class="dialog-wrap">',
         '<div class="dialog-overlay"></div>',
@@ -86,7 +95,7 @@ Object.size = function(obj) {
   $.dialog.center = function() {
     $dialog = $dialogWrap.find('.dialog');
     $dialog.css({
-      left: ($(win).width()- $dialog.width()) / 2
+      left: ($(win).width() - $dialog.width()) / 2
     });
   };
 
@@ -95,19 +104,18 @@ Object.size = function(obj) {
   };
 
   $(win).resize(function() {
-    if($dialogWrap && $dialogWrap.css('display') === 'block') {
+    if ($dialogWrap && $dialogWrap.css('display') === 'block') {
       $.dialog.center();
     }
   });
 
   // ESC keydown dialog Close
   $(doc).keydown(function(e) {
-    if($dialogWrap && $dialogWrap.css('display') === 'block') {
-      (e.keyCode === 27) && $.dialog.close();
+    if ($dialogWrap && $dialogWrap.css('display') === 'block') {
+      e.keyCode === 27 && $.dialog.close();
     }
   });
 })(jQuery, window, document);
-
 
 /**
  * msgbox plugin
@@ -119,13 +127,16 @@ Object.size = function(obj) {
     var $msgBox = $('#msg-box');
 
     if (!$msgBox.length) {
-      $msgBox = $('<div />', { id: "msg-box" });
+      $msgBox = $('<div />', { id: 'msg-box' });
       $('body').append($msgBox);
     }
 
-    $msgBox.text(text).css({
-      left: ($(win).width() - $msgBox.outerWidth(true)) / 2
-    }).addClass('visible');
+    $msgBox
+      .text(text)
+      .css({
+        left: ($(win).width() - $msgBox.outerWidth(true)) / 2
+      })
+      .addClass('visible');
 
     setTimeout(function() {
       $msgBox.removeClass('visible');

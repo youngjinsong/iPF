@@ -10,6 +10,7 @@ $(function() {
   var $header = $('header');
   var $btnTop = $('#btn-top');
   var $gnbButtons = $('nav a');
+  var utils = new Utils();
   var api = new API();
   var newsUI = new NewsUI(api);
   var careerUI = new CareerUI(api);
@@ -18,42 +19,12 @@ $(function() {
   var sectionPosition = [];
 
   /**
-   * 스크린 사이즈 정보 추출
-   */
-  function getScreenSize() {
-    return {
-      width: screen.width,
-      height: screen.height,
-      ratio: screen.width / screen.height,
-    };
-  }
-
-  /**
-   * iPad 13 사파리가 기본적으로 Desktop모드로 동작하여 useragent가 Mac으로 전달되어 userAgent로 구분이 안됨.
-   * REF https://forums.developer.apple.com/thread/119186
-   *
-   * 해상도 비율 처리 방법 고안
-   * iPad mini 1024 * 768 (1.33)
-   * iPad Air & pro 1024 * 768 (1.33)
-   * iPad large pro 1366 * 1024 (1.33)
-   *
-   * Mac PC의 경우 1.6 or 1.77의 ratio라 구분이 가능.
-   */
-  function detectAppleSafariPcMode() {
-    if (navigator.userAgent.match('Mac') && getScreenSize().ratio < 1.4) {
-      return true;
-    }
-
-    return false;
-  }
-
-  /**
    * 모바일 디바이스 체크
    */
   function detectMobile() {
     var isMobile = /Android|iPhone|iPad|iPod|webOS|BlackBerry/i.test(navigator.userAgent);
 
-    if (isMobile || detectAppleSafariPcMode()) {
+    if (isMobile || utils.detectAppleSafariPcMode()) {
       $body.addClass('mobile');
     } else {
       $body.addClass('pc');
@@ -130,15 +101,11 @@ $(function() {
   function moveScrollTop(top) {
     $('html, body').animate(
       {
-        scrollTop: top,
+        scrollTop: top
       },
       500
     );
   }
-
-  $('#brc-ios-download').on('click', function() {
-    alert('해당 앱은 중국 App Store에서만 지원합니다.');
-  });
 
   /**
    * 이벤트를 텀을 두고 발동하도록 디바운싱 합니다.
@@ -172,27 +139,15 @@ $(function() {
     }
   }
 
-  /**
-   * 초기 바인딩
-   */
-  function init() {
-    removeConsole();
-    newsUI.init();
-    careerUI.init();
-    sliderUI.init();
-    mapUI.init();
-
+  function bindWindowEvents() {
     $window
       .on('load', detectMobile)
       .on('load', setSectionPosition)
       .on('scroll', onScroll)
       .on('resize', debounce(setSectionPosition, 300));
+  }
 
-    $btnTop.on('click', function() {
-      moveScrollTop(0);
-      $btnTop.removeClass('shown');
-    });
-
+  function bindGnbEvent() {
     $gnbButtons.on('click', function() {
       setSectionPosition();
       var $this = $(this);
@@ -203,5 +158,35 @@ $(function() {
       return false;
     });
   }
+
+  function bindTopButtonEvent() {
+    $btnTop.on('click', function() {
+      moveScrollTop(0);
+      $btnTop.removeClass('shown');
+    });
+  }
+
+  function bindBrcIosButton() {
+    $('#brc-ios-download').on('click', function() {
+      alert('해당 앱은 중국 App Store에서만 지원합니다.');
+      return false;
+    });
+  }
+
+  /**
+   * 초기 바인딩
+   */
+  function init() {
+    removeConsole();
+    newsUI.init();
+    careerUI.init();
+    sliderUI.init();
+    mapUI.init();
+    bindWindowEvents();
+    bindGnbEvent();
+    bindTopButtonEvent();
+    bindBrcIosButton();
+  }
+
   init();
 });

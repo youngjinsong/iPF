@@ -24,6 +24,7 @@ function CareerUI(api) {
             var date = item.detail;
 
             if (visible === 'true') {
+              // prettier-ignore
               result.push([
                 '<li>',
                   '<a href="' + link + '" target="_blank">',
@@ -35,9 +36,7 @@ function CareerUI(api) {
             }
           });
         } else {
-          result.push([
-            "<li class='no-career'>진행중인 채용 공고가 없습니다.</li>"
-          ].join('\n'));
+          result.push(["<li class='no-career'>진행중인 채용 공고가 없습니다.</li>"].join('\n'));
         }
 
         $ul.html(result);

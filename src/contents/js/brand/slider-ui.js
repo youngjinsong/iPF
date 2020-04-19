@@ -20,18 +20,17 @@ function SliderUI() {
     if (containerWidth) {
       var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
       slider1.$ScaleWidth(expectedWidth);
-    }
-    else {
+    } else {
       window.setTimeout(scaleSlider, 30);
     }
   }
 
   function init() {
-    slider1 = new $JssorSlider$("slider1", options);
+    slider1 = new $JssorSlider$('slider1', options);
 
     scaleSlider();
-    $Jssor$.$AddEvent(window, "resize", scaleSlider);
-    $Jssor$.$AddEvent(window, "orientationchange", scaleSlider);
+    $Jssor$.$AddEvent(window, 'resize', scaleSlider);
+    $Jssor$.$AddEvent(window, 'orientationchange', scaleSlider);
   }
 
   $.extend(this, {

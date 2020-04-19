@@ -29,7 +29,7 @@ function MapUI() {
 
       // 말풍선
       var infowindow = new google.maps.InfoWindow({ content: data.title });
-      google.maps.event.addListener(marker, "click", function() {
+      google.maps.event.addListener(marker, 'click', function() {
         infowindow.open(map, marker);
       });
     },
@@ -46,7 +46,7 @@ function MapUI() {
       that.setMap({
         el: document.getElementById('headoffice'),
         position: headOfficePos,
-        title: "아이포트폴리오"
+        title: '아이포트폴리오'
       });
     }
   };
