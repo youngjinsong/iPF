@@ -9,7 +9,7 @@ function API() {
   console.log('Loaded API', arguments);
 
   var firebaseConfig = {
-    apiKey: 'AIzaSyD7-0MvZwk2SSopDRl3AAx0b8iaTQ6pufo',
+    apiKey: 'AIzaSyBjWIJFqgQNzBVkS8zmdK88jjughMm0Qec',
     authDomain: 'iportfolio-1532830529208.firebaseapp.com',
     databaseURL: 'https://iportfolio-1532830529208.firebaseio.com/'
   };
@@ -20,11 +20,8 @@ function API() {
    * @type {{create: create, read: read, update: update, delete: delete}}
    */
   var news = {
-    create: function(data, callback) {
-      var id = db
-        .ref()
-        .child('news')
-        .push().key;
+    create: function (data, callback) {
+      var id = db.ref().child('news').push().key;
       var title = data.title;
       var link = data.link;
       var timestemp = new Date(data.date).getTime();
@@ -36,7 +33,7 @@ function API() {
           link: link,
           date: timestemp
         },
-        function(error) {
+        function (error) {
           if (error) {
             // The write failed...
             console.error('saved error', error);
@@ -48,15 +45,15 @@ function API() {
         }
       );
     },
-    read: function(count, callback) {
+    read: function (count, callback) {
       var result = [];
 
       if (count) {
         db.ref('news/')
           .limitToLast(count)
           .orderByChild('date')
-          .once('value', function(data) {
-            data.forEach(function(obj) {
+          .once('value', function (data) {
+            data.forEach(function (obj) {
               result.unshift(obj.val());
             });
             callback(result);
@@ -65,19 +62,19 @@ function API() {
         // orderByChild()	지정된 하위 키 또는 중첩된 하위 경로의 값에 따라 결과를 정렬합니다.
         db.ref('news/')
           .orderByChild('date')
-          .once('value', function(data) {
-            data.forEach(function(obj) {
+          .once('value', function (data) {
+            data.forEach(function (obj) {
               result.unshift(obj.val());
             });
             callback(result);
           });
       }
     },
-    update: function(data, callback) {
+    update: function (data, callback) {
       var id = data.id;
       data.date = new Date(data.date).getTime();
 
-      db.ref('news/' + id).update(data, function(error) {
+      db.ref('news/' + id).update(data, function (error) {
         if (error) {
           // The write failed...
           console.error('update error', error);
@@ -88,8 +85,8 @@ function API() {
         }
       });
     },
-    delete: function(id, callback) {
-      db.ref('news/' + id).remove(function(error) {
+    delete: function (id, callback) {
+      db.ref('news/' + id).remove(function (error) {
         if (error) {
           // The write failed...
           console.error('delete error', error);
@@ -107,11 +104,8 @@ function API() {
    * @type {{create: create, read: read, update: update, delete: delete}}
    */
   var career = {
-    create: function(data, callback) {
-      var id = db
-        .ref()
-        .child('career')
-        .push().key;
+    create: function (data, callback) {
+      var id = db.ref().child('career').push().key;
       var title = data.title;
       var detail = data.detail;
       var link = data.link;
@@ -127,7 +121,7 @@ function API() {
           visible: visible,
           lastUpdateDate: lastUpdateDate
         },
-        function(error) {
+        function (error) {
           if (error) {
             // The write failed...
             console.error('saved error', error);
@@ -139,18 +133,18 @@ function API() {
         }
       );
     },
-    read: function(callback) {
+    read: function (callback) {
       var result = [];
-      db.ref('career/').once('value', function(data) {
-        data.forEach(function(obj) {
+      db.ref('career/').once('value', function (data) {
+        data.forEach(function (obj) {
           result.unshift(obj.val());
         });
         callback(result);
       });
     },
-    update: function(data, callback) {
+    update: function (data, callback) {
       var id = data.id;
-      db.ref('career/' + id).update(data, function(error) {
+      db.ref('career/' + id).update(data, function (error) {
         if (error) {
           // The write failed...
           console.error('update error', error);
@@ -161,8 +155,8 @@ function API() {
         }
       });
     },
-    delete: function(id, callback) {
-      db.ref('career/' + id).remove(function(error) {
+    delete: function (id, callback) {
+      db.ref('career/' + id).remove(function (error) {
         if (error) {
           // The write failed...
           console.error('delete error', error);
